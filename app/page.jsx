@@ -13,9 +13,6 @@ export default async function Home() {
 
     const res = await data.json();
 
-    const goToMovie = () => {
-        console.log('Clicked....')
-    }
     return (
       <RootLayout>
         <main className={styles.main}>

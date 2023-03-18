@@ -7,14 +7,13 @@ export default function Movies ({ id, title, poster, release, overview }) {
 
     return (
         <div>
-            <Link href={`/id`}>
+            <Link href={`/${id}`}>
                 <Image priority src={imageUrl + poster } alt={overview} width={800} height={800}/>
             </Link>
             <div className="mt-5">
                 <h1 className="truncate">{ title }</h1>
                 <h2>{release}</h2>
             </div>
-
         </div>
     )
 }
